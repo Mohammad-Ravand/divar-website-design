@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* add custome font */
+@font-face {
+  font-family: "IRANSans";
+  src: url("/fonts/A-Iranian-Sans/IRANSans-web.woff") format("woff"),
+    url("/fonts/A-Iranian-Sans/Sans a4fran3.ttf") format("truetype");
+}
+
+body,
+body * {
+    font-family: IRANSans,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 16px;
+}
